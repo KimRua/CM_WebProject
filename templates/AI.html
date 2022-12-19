@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../static/AI.css">
+	<link rel="icon" href="/static/images/0000-all-logo.png">
+	<title>[CM] Q&A</title>
+</head>
+
+<body>
+
+	<div class="wrap">
+		<!-- 헤더 -->
+		<a name="0"> </a>
+		<div class="intro_bg">
+			<div class="header">
+				<div class="left_logo_img">
+					<a href="{{ url_for('home_page') }}"><img src="../static/images/0000-all-logo.png" alt=""></a>
+				</div>
+				<ul class="nav">
+					<li><a href="{{ url_for('team') }}">Team</a></li>
+					<li><a href="{{ url_for('procect') }}">Project</a></li>
+					<li><a href="{{ url_for('introduction') }}">Introduction</a></li>
+					<li><a href="{{ url_for('qna') }}">Q&A</a></li>
+					<li><a href="{{ url_for('main_page') }}">Hub</a></li>
+				</ul>
+				<ul class="right_button">
+					<li><a href="https://github.com/CM-html/test" target="_blank"><img src="../static/images/0000-all-git.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/CM-%EB%8F%99%EC%95%84%EB%A6%AC-109222635034327" target="_blank"><img
+								src="../static/images/0000-all-facebook.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/cm_club_2022/" target="_blank"><img src="../static/images/0000-all-instagram.png"
+								alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="top_ray"></div>
+
+		<div class="ray_left">
+			<div class="img_pos">
+				<div class="title_pos">
+				</div>
+				<img src="../static/images/0000-AI-AI챗봇 이미지.png" alt="">
+			</div>
+		</div>
+
+		<div class="ray_right">
+			<div class="qna_box">
+				<br>
+				<h1>Q & A</h1>
+				<form action="/AI" method="post">
+					<br><br><br>
+					<h2>궁금한 것을 물어보세요!</h2>
+					<h4>ex) 동아리원은 총 몇 명인가요?</h4>
+					<br>
+					<input class="input1" type="text" placeholder="입력해주세요!" name="input" id="input" />
+					<input class="input2" type="submit" value="검색!">
+					<br><br><br><br><br>
+					<h2>질문의 대한 대답</h2>
+					<br>
+					<div class="next_str">
+						<p>{{string}}</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

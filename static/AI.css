@@ -1,0 +1,241 @@
+/* 기본 설정 */
+/*#region*/
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+:root {
+  --color-blue: #0d6efd;
+  --color-indigo: #6610f2;
+  --color-purple: #7464a1;
+  --color-pink: #d63384;
+  --color-red: #a16468;
+  --color-orange: #fd7e14;
+  --color-yellow: #e4c662;
+  --color-green: #67c29c;
+  --color-teal: #64a19d;
+  --color-cyan: #1cabc4;
+  --color-white: #fff;
+  --color-gray: #6c757d;
+  --color-gray-dark: #343a40;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+  --color-primary: #64a19d;
+  --color-secondary: #7464a1;
+  --color-success: #67c29c;
+  --color-info: #1cabc4;
+  --color-warning: #e4c662;
+  --color-danger: #a16468;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 100;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(70deg, #81ecec, #6c5ce7);
+}
+.contents1 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.contents2 {
+  font-size: 18px;
+}
+.contents3 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.contents1_bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+.top_ray {
+  width: 100%;
+  height: 7vh;
+}
+body::-webkit-scrollbar {
+  width: 0.5vh; /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: #24242470; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(34, 34, 34, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+/*#endregion*/
+
+/* 헤더 */
+/*#region*/
+.header {
+  width: 100%;
+  display: flex;
+  height: 6vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  position: fixed;
+  z-index: 999;
+  border-bottom: gray 1px solid;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  float: right;
+  line-height: 6vh;
+  margin: auto;
+}
+.nav > li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.nav > li > a {
+  color: black;
+  font-size: 20px;
+}
+.left_logo_img {
+  text-align: center;
+  margin-right: auto;
+  width: 10%;
+}
+.left_logo_img > a > img {
+  height: 6vh;
+}
+.right_button {
+  justify-content: flex-end;
+  margin-left: auto;
+  display: flex;
+  width: 10%;
+}
+.right_button > li {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 8%;
+}
+.right_button > li:last-child {
+  margin-left: 8%;
+  margin-right: 30%;
+}
+.right_button img {
+  height: 3vh;
+}
+/*#endregion*/
+
+/* 왼쪽 이미지 */
+/*#region*/
+.ray_left {
+  float: left;
+  width: 50%;
+  height: 90vh;
+  text-align: center;
+}
+.img_pos {
+  max-width: 80%;
+  max-height: 90%;
+  margin: 0 auto;
+  position: relative;
+  left: 10%;
+}
+.img_pos > img {
+  width: 95%;
+  height: 95%;
+}
+.title_pos {
+  position: relative;
+  top: 5vh;
+}
+/*#endregion*/
+
+/* 오른쪽 AI 챗 */
+/*#region*/
+.ray_right {
+  float: right;
+  width: 50%;
+  height: 90vh;
+  text-align: center;
+}
+
+.qna_box {
+  border-radius: 20px;
+  width: 25vw;
+  height: 70vh;
+  min-height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 13%;
+  right: 10%;
+}
+.qna_box > h1{
+  color: white;
+  margin-top: 10%;
+}
+h2{
+  color: white;
+  font-weight: 400;
+}
+h4{
+  color: white;
+  font-weight: lighter;
+}
+
+.input1 {
+  width: 70%;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+}
+input::placeholder{
+  color: white;
+}
+
+.input2 {
+  width: 20%;
+  height: 5.3vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+  color : white;
+}
+
+
+.next_str {
+  width: 90%;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  background-color: none;
+  margin: 0 auto;
+  background: transparent;
+}
+.next_str > p {
+  line-height: 5vh;
+  color: white;
+}
+/*#endregion*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{{ url_for('static', filename='Logup.css') }}" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/static/images/0000-all-logo.png">
+	<title>[CM] Login</title>
+</head>
+
+<body>
+	<div class="warp">
+		{% block content %}{% endblock %}
+
+		<footer>
+			<div class="footer_flex-1">
+				CM club <br>
+				<div class="br_class1"></div>
+				부장: 김현우 │ 이메일: khuoo4603@gmail.com<br>
+				담당 교사: 전창영 │ 전화번호: 070-7875-3423 │ 이메일: wjs7901@korea.kr<br>
+				학교 주소: 경기도 부천시 심곡본1동 768-9 │ 위치: 경기경영고등학교 5층 CM동아리실<br>
+				<div class="br_class1"></div>
+				<hr>
+				<div class="br_class1"></div>
+				⊙ Something nice, but useless sentences
+			</div>
+			<div class="footer_flex-2">
+				<a href="{{ url_for('team') }}">Team<br></a>
+				<a href="{{ url_for('procect') }}">Project<br></a>
+				<a href="{{ url_for('introduction') }}">Introduction<br></a>
+				<a href="{{ url_for('qna') }}">Q&A<br></a>
+				<a href="{{ url_for('main_page') }}">Hub<br></a>
+			</div>
+			<div class="footer_flex-3">
+				<div class="footer_flex-3_size">
+					<h1>CM 핵심 키워드</h1>
+					<div class="br_class2"></div>
+					<ul>
+						<li>
+							<p>게임</p>
+						</li>
+						<li>
+							<p>프로그래밍</p>
+						</li>
+						<li>
+							<p>인공지능</p>
+						</li>
+						<li>
+							<p>4차산업</p>
+						</li>
+						<li>
+							<p>열정</p>
+						</li>
+						<li>
+							<p>개발자</p>
+						</li>
+						<li>
+							<p>경험</p>
+						</li>
+						<li>
+							<p>경쟁력</p>
+						</li>
+						<li>
+							<p>포트폴리오</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_flex-4">
+				<div>
+					<a href="https://github.com/CM-html/test" target="_blank"><img src="../static/images/0000-all-github(footer).png" alt="">
+				</div>
+				<div>
+					<a href="https://www.facebook.com/CM-%EB%8F%99%EC%95%84%EB%A6%AC-109222635034327" target="_blank"><img
+							src="../static/images/0000-all-facebook(footer).png" alt=""></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/cm_club_2022/" target="_blank"><img src="../static/images/0000-all-instagram(footer).png"
+							alt=""></a>
+				</div>
+				<div></div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

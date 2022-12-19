@@ -1,0 +1,38 @@
+{% extends "Log.html" %}
+{% block content %}
+<body>
+    <form action="/logup" method="post" class="joinForm" onsubmit="return test();">
+        <h2>회원가입</h2>
+        <div class="textForm">
+            <input name="loginId" type="text" class="id" placeholder="아이디" id="loginId" required />
+        </div>
+        <div class="textForm">
+            <input name="loginPw" type="password" class="pw" placeholder="비밀번호" id="loginPw" required />
+        </div>
+        <div class="textForm">
+            <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인" id="loginPwConfirm" required />
+        </div>
+        <div class="textForm">
+            <input name="auth" type="password" class="auth" placeholder="인증코드" id="auth" required />
+        </div>
+        <input type="submit" class="btn" value="J O I N"/>
+    </form>
+
+    <script lang="JavaScript">
+        function test() {
+            var p1 = document.getElementById('loginPw').value;
+            var p2 = document.getElementById('loginPwConfirm').value;
+            if(p1.length < 6) {
+                alert('비밀번호는 6글자 이상이어야 합니다.');
+                return false;
+            }
+            if( p1 != p2 ) {
+                alert("비밀번호불일치");
+                return false;
+            } else{
+                return true;
+            }
+        }
+    </script>
+</body>
+{% endblock %}

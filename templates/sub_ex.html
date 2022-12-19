@@ -1,0 +1,367 @@
+<!-- 코드 정리 F1 -> Format Document -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../static/sub_ex.css">
+	<link rel="icon" href="/static/images/0000-all-logo.png">
+	<title>[CM] CM 소개</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<!-- 헤더 -->
+		<a name="0"> </a>
+		<div class="intro_bg">
+			<img src="../static/images/0000-all-상단배너.png" alt="">
+			<div class="header">
+				<div class="left_logo_img">
+					<a href="{{ url_for('home_page') }}"><img src="../static/images/0000-all-logo.png" alt=""></a>
+				</div>
+				<ul class="nav">
+					<li><a href="{{ url_for('team') }}">Team</a></li>
+					<li><a href="{{ url_for('procect') }}">Project</a></li>
+					<li><a href="{{ url_for('introduction') }}">Introduction</a></li>
+					<li><a href="{{ url_for('qna') }}">Q&A</a></li>
+					<li><a href="{{ url_for('main_page') }}">Hub</a></li>
+				</ul>
+				<ul class="right_button">
+					<li><a href="https://github.com/CM-html/test" target="_blank"><img src="../static/images/0000-all-git.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/CM-%EB%8F%99%EC%95%84%EB%A6%AC-109222635034327" target="_blank"><img
+								src="../static/images/0000-all-facebook.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/cm_club_2022/" target="_blank"><img src="../static/images/0000-all-instagram.png"
+								alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 중간 타이틀 동아리 소개 -->
+		<div class="main_text0">
+			<h1 class="ex_title">동아리 소개</h1>
+			<div class="ex_title_hr"></div>
+		</div>
+		<!-- CM -->
+		<!-- 전체적인 CM에 대한 설명 (경기경영고등학교의 스마트콘텐츠 전공 동아리 / 지금까지의 전적 / 원래 CM동아리의 전체적인 컴퓨터다루는 내용 / 컴퓨팅적 사고력 증가) -->
+		<div class="main_text1">
+			<a name="1"></a>
+			<div class="h1_frame">
+				<h1>Introduction</h1>
+			</div>
+			<div class="center_logo">
+				<img src="../static/images/0000-all-logo.png" alt="">
+			</div>
+			<div class="text1_box_all_pos">
+				<div class="text1_box">
+					<h1 class="text1_box1_title">CM이란</h1>
+					<div class="text1_box_in_text1">
+						<p>
+							CM 동아리는 경기경영고등학교 스마트 콘텐츠과의 전공 동아리이고 컴퓨터와 친해지고 컴퓨팅 사고력을 높이는 동아리입니다.<br>
+							우리는 타 동아리와는 다르게 학생이 주도하여 프로젝트를 기획하고 진행하고 있습니다.
+							또한 컴퓨터에 관한 모든 것들을 다루며 코딩, 편집, 3D프린팅 등 여러가지를 다룹니다.
+						</p>
+					</div>
+				</div>
+				<div class="text1_box">
+					<h1 class="text1_box2_title">그동안의 전적</h1>
+					<div class="text1_box_in_main2">
+						<p>
+							CM 동아리는 교내 프로젝트 이외에도 대회출전을 많이 합니다.
+							대회 전적으로는
+							SW . AI 수기 공모전(과학 통신 기술부 장관상) /
+							Hello New World(1위 대상) /
+							화이트해커(1위 대상 / 6위 입상)
+							이 있습니다. <br>
+							또한 외부 교육으로
+							현대오토에버 화이트해커 양성교육(2021.07 ~ 2021.11) /
+							넷마블 게임 아카데미(2021.06 ~ 2021.12)
+							등이 있습니다.
+							교내 에서는 웹 사이트 개발 프로젝트와 파이썬 및 플라스크, 인공지능 프로젝트를 진행하였습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="keyword_title_pos">
+				<div class="keyword_title">
+					<h1>핵심 키워드</h1>
+					<h3>- CM동아리에서 가장 중요하게 생각하는 것 -</h3>
+				</div>
+			</div>
+			<div class="keyword_pos">
+				<div class="keyword_frame_backboard_1">
+					<div class="keyword_frame">
+						<img src="../static/images/0000-Ex-협업.jpg" alt="">
+						<h1 class="keyword_frame_h1">협업</h1>
+						<div class="text-1">
+							<div class="-text_frame">
+								<h3>실무에서 중요시되는 협업을 중심으로 동아리 활동을 진행합니다.</h3>
+							</div>
+						</div>
+						<!-- 협업 -->
+					</div>
+				</div>
+				<div class="keyword_frame_backboard_2">
+					<div class="keyword_frame">
+						<img src="../static/images/0000-Ex-다양한 경험.jpg" alt="">
+						<!-- 다양한 경험 -->
+						<h1 class="keyword_frame_h1">다양한 경험</h1>
+						<div class="text-2">
+							<div class="-text_frame">
+								<h3>다양한 프로젝트로 새롭고 다양한 경험을 쌓습니다.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="keyword_frame_backboard_3">
+					<div class="keyword_frame">
+						<img src="../static/images/0000-Ex-끊임없는성장.jpg" alt="">
+						<!-- 끊임없는 성장 -->
+						<h1 class="keyword_frame_h1">끊임없는 성장</h1>
+						<div class="text-3">
+							<div class="-text_frame">
+								<h3>대회와 프로젝트를 진행하며 끊임없이 성장합니다.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="keyword_frame_backboard_4">
+					<div class="keyword_frame">
+						<img src="../static/images/0000-Ex-스펙.jpg" alt="">
+						<!-- 경쟁력 -->
+						<h1 class="keyword_frame_h1">경쟁력</h1>
+						<div class="text-4">
+							<div class="-text_frame">
+								<h3>취업, 대입을 위한 나만의 경쟁력을 우선시합니다.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mission -->
+		<!-- 활동 목적 및 가치관 (취업, 대입을 위한 역량 강화 및 주입식 교육보다는 실전경험으로서의 성장) - 타이틀 - 4차산업에 빠르게 적응하고 나만의 경쟁력을 추구 -->
+		<div class="main_text2">
+			<a name="2"></a>
+			<div class="h1_frame">
+				<h1>Mission</h1>
+			</div>
+			<div class="main2_title_box">
+				<img src="../static/images/0000-Ex-미션 타이틀.jpg" alt="">
+				<div class="main2_title_box_in_text_pos">
+					<br><br>
+					<h2>- 우리의 미션은 -</h2>
+					<br>
+					<h1>"4차산업에 빠르게 적응하고 나만의 경쟁력을 만들자"</h1>
+					<br>
+				</div>
+			</div>
+			<div class="main2_textbox_pos">
+				<div>
+					<div class="main2_textbox_backbox1">
+						<div class="main2_textbox_textpos">
+							<h1>4차산업</h1>
+							<hr>
+						</div>
+						<div class="main2_num_border">
+							<h1></h1>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="main2_textbox_backbox2">
+						<div class="main2_textbox_textpos">
+							<h1>경쟁력</h1>
+							<hr>
+						</div>
+						<div class="main2_num_border">
+							<h1></h1>
+						</div>
+					</div>
+				</div>
+				<div class="main2_textbox_maintextpos1">
+					<h2>4차산업 시대의 꽃 '프로그래밍'</h1>
+						<hr>
+						<br>
+						<p>
+							4차산업 시대의 꽃인 프로그래밍을 학습하고 더욱 깊게 공부합니다.
+							새로운 알고리즘, 시스템을 직접 개발하고 결과물을 만들것입니다.
+							또한 4차산업에서 필수인 컴퓨터와 더욱 가까워 질 수 있습니다.
+						</p>
+				</div>
+				<div class="main2_textbox_maintextpos2">
+					<h2>취업과 대입을 위한 경쟁력</h1>
+						<hr>
+						<br>
+						<p>
+							특성화 고등학생의 취업을 위해 대회 실적과 협업을 통한 프로젝트로 남들과 다른 경험과 포트폴리오를 제작할 수 있습니다.
+							또한 프로그래밍에 익숙해 지고 컴퓨팅 사고력을 높여 자격증을 취득할 수 있습니다.
+							대입에 필요한 지식과 경험을 쌓을 수 있습니다.
+						</p>
+				</div>
+			</div>
+		</div>
+		<!-- Vision -->
+		<!-- 앞으로의 계획 (코딩위주의 방향성 / 프로젝트 / 동아리원 관련 내용) - 타이틀 - 남들과 다른 경험과 지식으로 더 나은 삶을. (포트폴리오 제작 / 코딩위주의 방향성 / 게임 개발 프로젝트 / 경험을 기반으로 한 지식 획득) -->
+		<div class="main_text3">
+			<a name="3"></a>
+			<div class="h1_frame">
+				<h1>Vision</h1>
+			</div>
+			<div class="main3_title_box">
+				<img src="../static/images/0000-Ex-비전 타이틀.jpg" alt="">
+				<div class="main3_title_box_in_text_pos">
+					<br><br><br>
+					<h1>"학생 주도 프로젝트로 남들과 다른 경험과 지식."</h1>
+					<br>
+					<div class="main3_title_box_in_text_main">
+						<p>
+							우리는 남들과 다른 경험을 추구합니다.
+							프로그래밍을 배우는 과정에서 나에게 맞는 분야를 폭넓게 탐색하고 나만의 프로젝트를 완성하는 것이 남들과 다른 경험이 되고 지식이 됩니다.
+							우리는 이런프로젝트를 중심으로 동아리 활동을 이어나갈 것입니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="main3_key_pos">
+				<div class="main3_key_title_pos">
+					<h1>2022 - 우리의 방향성</h1>
+					<h3>- 비전달성을 위한 2022 키워드 -</h3>
+				</div>
+				<div class="main3_key_line_pos1">
+					<div class="main3_key_backboard_1">
+						<div class="main3_key">
+							<img src="../static/images/0000-Ex-프로톨리오 제작.jpg" alt="">
+							<h1 class="main3_key_h1">01</h1>
+						</div>
+						<div class="main3_key_text1_pos">
+							<h2>포트폴리오 제작</h2>
+							<hr>
+							<br>
+							<h3>
+								우리는 개개인의 대학입시, 취업을 위한 포트폴리오 제작에 힘쓸 것입니다.
+								프로젝트를 진행하고 협업을 하며 남들과는 다른 포트폴리오를 제작할 수 있도록 할 것입니다.
+							</h3>
+						</div>
+					</div>
+					<div class="main3_key_backboard_2">
+						<div class="main3_key">
+							<img src="../static/images/0000-Ex-코딩위주의 방향성.jpg" alt="">
+							<h1 class="main3_key_h1">02</h1>
+						</div>
+						<div class="main3_key_text2_pos">
+							<h2>코딩위주의 방향성</h2>
+							<hr>
+							<br>
+							<h3>
+								4차 산업시대에 걸맞는 프로그래밍을 중심으로 동아리 활동을 진행할 것입니다.
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div class="main3_key_line_pos2">
+					<div class="main3_key_backboard_3">
+						<div class="main3_key">
+							<img src="../static/images/0000-Ex-게임 개발 프로젝트.jpg" alt="">
+							<h1 class="main3_key_h1">03</h1>
+						</div>
+						<div class="main3_key_text3_pos">
+							<h2>게임 개발 프로젝트</h1>
+								<hr>
+								<br>
+								<h3>
+									학생들에게 가장 흥미가 있는 게임을 직접 만들어보고 게임 제작에 대한 경험과 지식을 얻을 것입니다.
+								</h3>
+						</div>
+					</div>
+					<div class="main3_key_backboard_4">
+						<div class="main3_key">
+							<img src="../static/images/0000-Ex-경험을 기반으로 한 지식 획득.jpg" alt="">
+							<h1 class="main3_key_h1">04</h1>
+						</div>
+						<div class="main3_key_text4_pos">
+							<h2>경험을 기반으로 한 지식 획득</h2>
+							<hr>
+							<br>
+							<h3>
+								주입식 교육의 단점을 보안하고 학교에서 배울 수 없는 지식을 얻기 위해 경험을 기반으로 한 지식을 목표로 할 것입니다.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer_flex-1">
+				CM club <br>
+				<div class="br_class1"></div>
+				부장: 김현우 │ 이메일: khuoo4603@gmail.com<br>
+				담당 교사: 전창영 │ 전화번호: 070-7875-3423 │ 이메일: wjs7901@korea.kr<br>
+				학교 주소: 경기도 부천시 심곡본1동 768-9 │ 위치: 경기경영고등학교 5층 CM동아리실<br>
+				<div class="br_class1"></div>
+				<hr>
+				<div class="br_class1"></div>
+				⊙ Something nice, but useless sentences
+			</div>
+			<div class="footer_flex-2">
+				<a href="{{ url_for('team') }}">Team<br></a>
+				<a href="{{ url_for('procect') }}">Project<br></a>
+				<a href="{{ url_for('introduction') }}">Introduction<br></a>
+				<a href="{{ url_for('qna') }}">Q&A<br></a>
+				<a href="{{ url_for('main_page') }}">Hub<br></a>
+			</div>
+			<div class="footer_flex-3">
+				<div class="footer_flex-3_size">
+					<h1>CM 핵심 키워드</h1>
+					<div class="br_class2"></div>
+					<ul>
+						<li>
+							<p>게임</p>
+						</li>
+						<li>
+							<p>프로그래밍</p>
+						</li>
+						<li>
+							<p>인공지능</p>
+						</li>
+						<li>
+							<p>4차산업</p>
+						</li>
+						<li>
+							<p>열정</p>
+						</li>
+						<li>
+							<p>개발자</p>
+						</li>
+						<li>
+							<p>경험</p>
+						</li>
+						<li>
+							<p>경쟁력</p>
+						</li>
+						<li>
+							<p>포트폴리오</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_flex-4">
+				<div>
+					<a href="https://github.com/CM-html/test" target="_blank"><img src="../static/images/0000-all-github(footer).png" alt="">
+				</div>
+				<div>
+					<a href="https://www.facebook.com/CM-%EB%8F%99%EC%95%84%EB%A6%AC-109222635034327" target="_blank"><img
+							src="../static/images/0000-all-facebook(footer).png" alt=""></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/cm_club_2022/" target="_blank"><img src="../static/images/0000-all-instagram(footer).png"
+							alt=""></a>
+				</div>
+				<div></div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

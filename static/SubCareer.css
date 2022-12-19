@@ -1,0 +1,441 @@
+/* 기본 설정 */
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+
+:root {
+  --color-blue: #0d6efd;
+  --color-indigo: #6610f2;
+  --color-purple: #7464a1;
+  --color-pink: #d63384;
+  --color-red: #a16468;
+  --color-orange: #fd7e14;
+  --color-yellow: #e4c662;
+  --color-green: #67c29c;
+  --color-teal: #64a19d;
+  --color-cyan: #1cabc4;
+  --color-white: #fff;
+  --color-gray: #6c757d;
+  --color-gray-dark: #343a40;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+  --color-primary: #64a19d;
+  --color-secondary: #7464a1;
+  --color-success: #67c29c;
+  --color-info: #1cabc4;
+  --color-warning: #e4c662;
+  --color-danger: #a16468;
+  --color-light: #f8f9fa;
+  --color-dark: #212529;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+.contents1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+.contents2 {
+  font-size: 18px;
+}
+.contents3 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.contents4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contents1_bold {
+  font-size: 20px;
+  font-weight: bold;
+  /* background-image: url("../Main_CM_Html/Assets/Img/slide01.jpg"); */
+}
+body::-webkit-scrollbar {
+  width: 0.5vh; /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: #24242470; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(34, 34, 34, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+/* 기본 설정 */
+
+/* --- */
+
+/* 헤더 */
+/*#region*/
+.intro_bg {
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+.intro_bg > img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header {
+  width: 100%;
+  display: flex;
+  height: 6vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  position: fixed;
+  z-index: 999;
+  border-bottom: gray 1px solid;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  float: right;
+  line-height: 6vh;
+  margin: auto;
+}
+.nav > li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.nav > li > a {
+  color: black;
+  font-size: 20px;
+}
+.left_logo_img {
+  text-align: center;
+  margin-right: auto;
+  width: 10%;
+}
+.left_logo_img > a > img {
+  height: 6vh;
+}
+.right_button {
+  justify-content: flex-end;
+  margin-left: auto;
+  display: flex;
+  width: 10%;
+}
+.right_button > li {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 8%;
+}
+.right_button > li:last-child {
+  margin-left: 8%;
+  margin-right: 30%;
+}
+.right_button img {
+  height: 3vh;
+}
+/*#endregion*/
+
+/* --- */
+
+/* 사진 제목 */
+.amount {
+  position: relative;
+  top: -66px;
+  display: flex;
+  width: 1280px;
+  background: var(--color-white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+.amount > li {
+  flex: 1;
+  height: 132px;
+}
+.amount > li > div {
+  text-align: center;
+  margin-top: 37px;
+  height: 57px;
+}
+.amount > li:not(:last-child) > div {
+  border-right: 1px solid #e1e1e1;
+}
+/* 사진 제목 */
+
+/* --- */
+
+/* 본문 (main_text0) - 제목 아레 사진 */
+/* 이미지 들어가는 코드 */
+.test1 {
+  background-image: url("../static/images/2021-Career-김현우프로필\ 예비.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.test2 {
+  background: url("../static/images/2021-Career-강재형프로필\ 예비.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.test3 {
+  background: url("../static/images/2021-Career-김겸프로필\ 예비.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.test4 {
+  background: url("../static/images/2021-Career-이도연프로필\ 예비.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 이미지 들어가는 코드 */
+
+.main_text0 {
+  width: 100%;
+  height: 430px;
+  margin-top: -132px;
+  background-color: whitesmoke;
+}
+.main_text0 > h1 {
+  padding-top: 116px;
+  text-align: center;
+}
+.main_text0 > .contents1 {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  width: 1280px;
+  height: 302px;
+  margin: auto;
+}
+.icons > li {
+  flex: 1;
+  /* background-color:; */
+  margin-top: 90px;
+  height: 302px;
+  text-align: center;
+}
+.icons > li > .icon_img {
+  margin-top: 18px;
+}
+.icons > li:not(:last-child) {
+  margin-right: 20px;
+}
+.icons .contents2 {
+  width: 280px;
+  margin: auto;
+  letter-spacing: -1px;
+}
+/* 본문 (main_text0) - 제목 아레 사진 */
+.main_text1 {
+  width: 100%;
+  height: 215px;
+}
+.main_text1-1 {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main_text1-2 {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main_text1-3 {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main_text1-4 {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main_text1 > hr {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main_text1 > h2 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+.main_text1 > h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.service {
+  width: 80%;
+  display: flex;
+  margin: auto auto;
+  height: 100%;
+}
+.divflax {
+  flex: 1;
+}
+.divflax > .contents2 > h2 {
+  position: relative;
+  padding-top: 70px;
+  bottom: 120px;
+}
+
+.main_text1-1 .contents2,
+.main_text1-3 .contents2 {
+  text-align: right;
+  padding: 50px;
+}
+.main_text1-2 .contents2,
+.main_text1-4 .contents2 {
+  text-align: left;
+  padding: 50px;
+}
+
+.main_text1-1 img,
+.main_text1-3 img {
+  width: 740px;
+  height: 420x;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.main_text1-2 img,
+.main_text1-4 img {
+  width: 740px;
+  height: 420x;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.img_right {
+  text-align: right;
+}
+/* 본문 2번째 (main_text1, 1-1, 1-2, 1-3) - 상세 설명 */
+
+/* --- */
+
+/* 본문 3번 (main_text2) - 부가 설명 */
+.main_text2 {
+  width: 100%;
+  height: 418px;
+  background-image: url("../static/images/contact.png");
+}
+.main_text2 > ul {
+  display: flex;
+  padding-top: 138px;
+}
+.main_text2 > ul > li {
+  flex: 1;
+  text-align: center;
+}
+.main_text2 > ul > li > div,
+.main_text2 > ul > li > div > h1 {
+  color: #fff;
+}
+.more2 {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 16px auto;
+}
+/* 본문 3번 (main_text2) - 부가 설명 */
+
+/* --- */
+
+/* 푸터 */
+/*#region*/
+footer {
+  background: #242424;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 150px;
+  display: flex;
+}
+.footer_flex-1 {
+  flex: 4;
+  color: white;
+  font-size: 15px;
+}
+.footer_flex-1 > hr {
+  border: gray 0.5px solid;
+}
+.br_class1 {
+  height: 20px;
+}
+.footer_flex-1 > hr {
+  width: 95%;
+}
+.footer_flex-2 {
+  flex: 1;
+}
+.footer_flex-2 > a {
+  font-size: 15px;
+  line-height: 28px;
+  color: rgba(245, 245, 245, 0.63);
+}
+.footer_flex-3 {
+  flex: 3;
+}
+.footer_flex-3_size {
+  width: 90%;
+}
+.footer_flex-3 h1 {
+  font-size: 16px;
+  color: rgb(245, 245, 245);
+}
+.br_class2 {
+  height: 12px;
+}
+.footer_flex-3 li {
+  display: inline-block;
+  padding: 3px;
+}
+.footer_flex-3 p {
+  display: block;
+  line-height: 13px;
+  min-width: 30px;
+  text-align: center;
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.63);
+  color: rgba(245, 245, 245, 0.63);
+}
+.footer_flex-4 {
+  flex: 2;
+  display: flex;
+}
+.footer_flex-4 > div {
+  flex: 1;
+}
+.footer_flex-4 > div > a > img {
+  width: 40px;
+  height: 40px;
+  filter: invert();
+}
+/*#endregion*/

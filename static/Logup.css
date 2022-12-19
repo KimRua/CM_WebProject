@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.joinForm {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  padding: 30px, 20px;
+  background-color: #ffffff;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.joinForm h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.textForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+
+.id {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.pw {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.auth {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #636e72;
+  font-size: 16px;
+  height: 25px;
+  background: none;
+}
+
+.btn {
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  width: 80%;
+  height: 40px;
+  background: linear-gradient(125deg, #81ecec, #6c5ce7, #81ecec);
+  background-position: left;
+  background-size: 200%;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  display: inline;
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+body {
+  background-color: #fff;
+}
+h2 {
+  color: #000;
+}
+p {
+  color: #000;
+}
+/* 푸터 */
+/*#region*/
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background: #242424;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 150px;
+  display: flex;
+}
+.footer_flex-1 {
+  flex: 4;
+  color: white;
+  font-size: 15px;
+}
+.footer_flex-1 > hr {
+  border: gray 0.5px solid;
+}
+.br_class1 {
+  height: 20px;
+}
+.footer_flex-1 > hr {
+  width: 95%;
+}
+.footer_flex-2 {
+  flex: 1;
+}
+.footer_flex-2 > a {
+  font-size: 15px;
+  line-height: 28px;
+  color: rgba(245, 245, 245, 0.63);
+}
+.footer_flex-3 {
+  flex: 3;
+}
+.footer_flex-3_size {
+  width: 90%;
+}
+.footer_flex-3 h1 {
+  font-size: 16px;
+  color: rgb(245, 245, 245);
+}
+.br_class2 {
+  height: 12px;
+}
+.footer_flex-3 li {
+  display: inline-block;
+  padding: 3px;
+}
+.footer_flex-3 p {
+  display: block;
+  line-height: 13px;
+  min-width: 30px;
+  text-align: center;
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.63);
+  color: rgba(245, 245, 245, 0.63);
+}
+.footer_flex-4 {
+  flex: 2;
+  display: flex;
+}
+.footer_flex-4 > div {
+  flex: 1;
+}
+.footer_flex-4 > div > a > img {
+  width: 40px;
+  height: 40px;
+  filter: invert();
+}
+/*#endregion*/

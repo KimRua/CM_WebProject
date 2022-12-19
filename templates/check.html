@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body onload="javascript:onload()">
+  <br>
+  <div class="jumbotron text-center">
+    <h3>파일 업로드 성공!</h3>
+    <img src="{{ url_for('static',filename='images/0000-check-tick.png') }}" , width="100" ) />
+  </div>
+  <script language="javascript">
+    function onload() {
+      setTimeout('go_home()', 3000)
+    }
+    function go_home() {
+      location.href = "/upload"
+    }
+  </script>
+</body>
+{% endblock %}

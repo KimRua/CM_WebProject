@@ -1,0 +1,24 @@
+{% extends "Log.html" %}
+{% block content %}
+<body>
+    <form action="/login" method="post" class="joinForm" >
+        <h2>로그인</h2>
+        <div class="textForm">
+            <input name="loginId" type="text" class="id" placeholder="아이디" id="loginId" required />
+        </div>
+        <div class="textForm">
+            <input name="loginPw" type="password" class="pw" placeholder="비밀번호" id="loginPw" required />
+        </div>
+        <input type="submit" class="btn" value="L O G I N"/>
+        <p id="LogUp" style="cursor:pointer">| 회원 가입 |</p>
+    </form>
+
+    <script language="javascript">
+		document.getElementById("LogUp").onclick = function () { LogUp() };
+
+		function LogUp() {
+			location.href = "/logup"
+		}
+	</script>
+</body>
+{% endblock %}

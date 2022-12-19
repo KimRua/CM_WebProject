@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[CM] Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/images/logolast.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ url_for('static', filename='upload.css') }}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/static/images/0000-all-logo.png">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <a name="0"> </a>
+        <div class="intro_bg">
+            <div class="header">
+                <div class="left_logo_img">
+                    <a href="{{ url_for('home_page') }}"><img src="../static/images/0000-all-logo.png" alt=""></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="{{ url_for('team') }}">Team</a></li>
+                    <li><a href="{{ url_for('procect') }}">Project</a></li>
+                    <li><a href="{{ url_for('introduction') }}">Introduction</a></li>
+                    <li><a href="{{ url_for('qna') }}">Q&A</a></li>
+                    <li><a href="{{ url_for('main_page') }}">Hub</a></li>
+                </ul>
+                <ul class="right_button">
+					<li><a href="https://github.com/CM-html/test" target="_blank"><img src="../static/images/0000-all-git.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/CM-%EB%8F%99%EC%95%84%EB%A6%AC-109222635034327" target="_blank"><img
+								src="../static/images/0000-all-facebook.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/cm_club_2022/" target="_blank"><img src="../static/images/0000-all-instagram.png"
+								alt=""></a></li>
+				</ul>
+            </div>
+        </div>
+        <hr width="100%" class="divider" />
+        <div class="white_space"></div>
+        <div class="userid_if_pos">
+            <div class="mr-5 text-md-left">
+                <img src="../static/images/0000-base-upload_logo.png" alt="" width="70px">
+                <p class="File_Upload">File Hub</p>
+            </div>
+            <div class="userid_if_text">
+                {% if userID == '로그인 해 주세요' %}
+                <p>{{userID}}</p>
+                {% else %}
+                <p>{{userID}}님 환영합니다</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="mr-5 text-md-right">
+            <span class="float-left mt-2 ml-5">
+            </span>
+            <a href="/login">
+                <div class="login_button_pos login_button">로그인</div>
+            </a>
+            <a href="/logup">
+                <div class="signup_button_pos login_button">회원가입</div>
+            </a>
+        </div>
+        <div class="br_size"></div>
+        <hr width="100%" class="divider" />
+
+        <script language="javascript">
+            document.getElementById("home").onclick = function () { go_home() };
+
+            function go_home() {
+                location.href = "/"
+            }
+        </script>
+
+        {% block content %}{% endblock %}
+</body>
+
+</html>

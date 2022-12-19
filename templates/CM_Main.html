@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/static/images/0000-all-logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href="{{ url_for('static', filename='CM_Main.css') }}" rel="stylesheet" type="text/css">
+	<script src="{{ url_for('static', filename='CM_Main.js') }}"> </script>
+	<title>[CM] 메인 페이지</title>
+</head>
+
+<body>
+	<div id="main" class="scroll-container">
+		<!-- 인사말 -->
+		<section class="section1">
+			<img src="{{ url_for('static', filename='images/0000-CM_main-CM메인배경.jpg') }}" alt="">
+			<div class="header">
+				<!--Content before waves-->
+				<div class="inner-header flex">
+					<img src="{{ url_for('static', filename='images/0000-all-상단배너글씨(흰색).png') }}">
+				</div>
+
+				<!--Waves Container-->
+				<div>
+					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+							<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+						</g>
+					</svg>
+				</div>
+				<!--Waves end-->
+
+			</div>
+			<!--Header ends-->
+
+			<!--Content starts-->
+			<div class="content flex">
+				<p>경기경영고등학교 | 2022 | CM동아리</p>
+			</div>
+			<!--Content ends-->
+			<!-- partial -->
+		</section>
+		<!-- 동아리 설명 -->
+		<section class="section2">
+			<div class="explanation">
+				<ul>
+					<li>
+						<img src="{{ url_for('static', filename='images/0000-CM_main-동아리 설명 트리.png') }}" alt="이미지를 불러올 수 없습니다"
+							class="img_pos2" width="600px" height="850px">
+						<div class="divpos1">
+							<ul>
+								<li class="lipos1">
+									<h1>협업</h1>
+									<p>실무에서 중요시되는 <br>협업을 중심으로 <br>동아리 활동을 진행합니다.</p>
+								</li>
+								<li class="lipos2">
+									<h1>다양한 경험</h1>
+									<p>다양한 프로젝트로 <br>새롭고 다양한 경험을 쌓습니다.</p>
+								</li>
+								<li class="lipos3">
+									<h1>끊임없는 성장</h1>
+									<p>대회와 프로젝트를 진행하며 <br>끊임없이 성장합니다.</p>
+								</li>
+								<li class="lipos4">
+									<h1>경쟁력</h1>
+									<p>취업, 대입을 위한 <br>나만의 경쟁력을 우선시합니다.</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>Introduction</h1>
+						</div>
+						<div>우리 동아리는 코딩을 위주로 더욱 컴퓨터에 가까워지기 위한 동아리 입니다.</div>
+						<a href="{{ url_for('introduction') }}">
+							<div class="more2">자세히 알아보기</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 팀원 설명 -->
+		<section class="section3">
+			<div class="explanation">
+				<ul>
+					<li>
+						<div>
+							<h1>Team</h1>
+						</div>
+						<div>동아리의 자랑! 대표! 3학년 부원입니다!</div>
+						<a href="{{ url_for('team') }}">
+							<div class="more2">더 알아보기</div>
+						</a>
+					</li>
+					<li>
+						<div class="team_p">
+							<ul>
+								<li class="profile1">
+									<div>
+										<h1>김현우</h1>
+										<ul class="ex_divpos">
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-unity.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-python.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-c.png') }}" alt=""></li>
+										</ul>
+									</div>
+									<img src="{{ url_for('static', filename='images/2021-CM_main-김현우증사.jpg') }}" alt="x" class="cropped2">
+								</li>
+								<li class="profile2">
+									<div>
+										<h1>강재형</h1>
+										<ul class="ex_divpos">
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-html.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-css.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-js.png') }}" alt=""></li>
+										</ul>
+									</div>
+									<img src="{{ url_for('static', filename='images/2021-CM_main-강재형증사.jpg') }}" alt="x" class="cropped2">
+								</li>
+								<li class="profile3">
+									<div>
+										<h1>김겸</h1>
+										<ul class="ex_divpos">
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-unity.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-python.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-mysql.png') }}" alt=""></li>
+										</ul>
+									</div>
+									<img src="{{ url_for('static', filename='images/2021-CM_main-김겸증사.jpg') }}" alt="x" class="cropped2">
+								</li>
+								<li class="profile4">
+									<div>
+										<h1>이도연</h1>
+										<ul class="ex_divpos">
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-unity.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-c.png') }}" alt=""></li>
+											<li><img src="{{ url_for('static', filename='images/0000-CM_main-c#.png') }}" alt=""></li>
+										</ul>
+									</div>
+									<img src="{{ url_for('static', filename='images/2021-CM_main-이도연증사.jpg') }}" alt="x" class="cropped2">
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 교내 프로젝트 -->
+		<section class="section4">
+			<div class="explanation">
+				<ul>
+					<li>
+						<div class="eximg1">
+							<ul>
+								<li class="eximg1-1">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-CM동아리노션.jpg') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+								<li class="eximg1-2">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-자율주행자동차.jpg') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+								<li class="eximg1-3">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-게임개발오픈클래스.jpg') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>Project</h1>
+						</div>
+						<div>학교 동아리 시간에 진행하는 교내 프로젝트!</div>
+						<a href="{{ url_for('procect') }}">
+							<div class="more2">더 알아보기</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 외부 프로젝트 -->
+		<section class="section5">
+			<div class="explanation">
+				<ul>
+					<li>
+						<div>
+							<h1>Project</h1>
+						</div>
+						<div>학교 밖에서 진행하는 대회! 행사! 교외 프로젝트!</div>
+						<a href="{{ url_for('procect') }}">
+							<div class="more2">더 알아보기</div>
+						</a>
+					</li>
+					<li>
+						<div class="eximg2">
+							<ul>
+								<li class="eximg2-1">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-넷마블.jpg') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+								<li class="eximg2-2">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-화이트해커.jpg') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+								<li class="eximg2-3">
+									<img src="{{ url_for('static', filename='images/2021-CM_main-헬로뉴월드.png') }}" alt="x" width="450px"
+										height="300px">
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<!-- 상단 메뉴 -->
+	<div class="logo_header">
+		<h1>
+			<div class="nav1">
+				<a href="#0"><img src="{{ url_for('static', filename='images/0000-all-logo.png') }}" alt="" width="100px"
+						height="100px"></a>
+			</div>
+		</h1>
+		<nav>
+			<span>
+				<a href="#" class="hamburger-button">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="overlay">
+					<nav class="menu">
+						<ul class="icons">
+							<li>
+								<img src="{{ url_for('static', filename='images/0000-all-상단배너글씨(검정).png') }}" alt=""
+									class="menu_img_pos">
+								<a href="{{ url_for('qna') }}">
+									<h1 class="menu_QNA_button">Q & A</h1>
+								</a>
+							</li>
+							<li class="li1">
+								<h1><a href="{{ url_for('introduction') }}">동아리 소개</a></h1>
+								<ul class="menu_ul">
+									<li>
+										<a href="{{ url_for('introduction') }}">CM 소개 페이지 이동</a>
+									</li>
+									<li>
+										<a href="/introduction#1">Introduction</a>
+									</li>
+									<li>
+										<a href="/introduction#2">Mission</a>
+									</li>
+									<li>
+										<a href="/introduction#3">Vision</a>
+									</li>
+								</ul>
+							</li>
+							<li class="li2">
+								<h1><a href="{{ url_for('team') }}">팀원 소개</a></h1>
+								<ul class="menu_ul">
+									<li>
+										<a href="{{ url_for('team') }}">팀 프로필 페이지 이동</a>
+									</li>
+									<li>
+										<a href="/team#1">3학년</a>
+									</li>
+									<li>
+										<a href="/team#2">2학년</a>
+									</li>
+									<li>
+										<a href="/team#3">1학년</a>
+									</li>
+								</ul>
+							</li>
+							<li class="li3">
+								<h1><a href="{{ url_for('procect') }}">프로젝트</a></h1>
+								<ul class="menu_ul">
+									<li>
+										<a href="{{ url_for('procect') }}">성과 페이지 이동</a>
+									</li>
+									<li>
+										<a href="/procect#1">교내 활동</a>
+									</li>
+									<li>
+										<a href="/procect#2">외부 활동</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</span>
+		</nav>
+	</div>
+
+	<!--
+	<div id="popup" class="hide">
+		<div class="content">
+		<img src="{{ url_for('static', filename='images/2021-Propile-김겸증사.jpg') }}" alt="" height="300px">
+		<p>
+			CM동아리원 김겸학생이 전교총학생회장선거에 출마합니다!! 
+			<br> 
+			기호 1번 김겸 학생을 응원해주세요!!
+		</p>
+		<br>
+		[공약]
+		<ul>
+			<li>자격증 응시 수수료 및 교재 대여 / 화장 및 두발 자율화</li>
+			<li>점심시간 체육관 개방 / 정보의 투명성 보장</li>
+			<li>스포츠 대회 개최 / e스포츠 대회 개최</li>
+		</ul>
+		<button onclick="closePopup()">닫기</button>
+		</div>
+	</div>
+	-->
+
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
+
+	<script language="javascript">
+		document.getElementById("demo").onclick = function () { go_upload() };
+
+		function go_upload() {
+			location.href = "/upload"
+		}
+	</script>
+</body>
+
+</html>
